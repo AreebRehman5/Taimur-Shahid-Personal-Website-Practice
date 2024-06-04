@@ -10,7 +10,10 @@
         }
     });
 
-
+    if (window.matchMedia('(max-width: 991px)').matches) {
+        // Change the behavior of the CV download link to open in the same tab
+        document.getElementById('downloadCV').setAttribute('target', '_self');
+    }
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
