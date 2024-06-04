@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <title>Taimur Shahid Personal Website Practice</title>
@@ -31,9 +30,6 @@
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-
-        <script src="path/to/jquery.min.js"></script>
-        <script src="path/to/bootstrap.bundle.min.js"></script>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -41,10 +37,9 @@
         <nav
             class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="text-primary m-0">
-                    <img class="me-3" src="/img/Hatch logo pdf_page-0001.jpg"
-                        alt="Icon" width="170" height="70">
-                </h1>
+                <h1 class="text-primary m-0"><img class="me-3"
+                        src="/img/Hatch logo pdf_page-0001.jpg" alt="Icon"
+                        width="170" height="70"></h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse"
                 data-target="#navbarCollapse">
@@ -53,44 +48,53 @@
             <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
                     <a href="index.html" class="nav-item nav-link ">Home</a>
-                    <a href="about.html" class="nav-item nav-link ">About</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="experience.html"
                         class="nav-item nav-link">Experience</a>
                     <a href="skills.html" class="nav-item nav-link">Skills</a>
-                    <a href="achievement.html" class="nav-item nav-link active">Achievement</a>
+                    <a href="achievement.html"
+                        class="nav-item nav-link active">Achievement</a>
+                    <a href="privacy.html"
+                        class="nav-item nav-link ">Privacy</a>
+                    <a href="FAQs.html" class="nav-item nav-link ">FAQs</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href class="btn btn-outline-primary d-none d-lg-block">Hire
+                <a href="#"
+                    class="btn btn-outline-primary d-none d-lg-block">Hire
                     Me</a>
             </div>
         </nav>
         <!-- Navbar End -->
 
-        <!-- Video Modal Start -->
-        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal"
-                            aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- 16:9 aspect ratio -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <video id="modalVideo" class="embed-responsive-item"
-                                controls >
-                                <source
-                                    src="/img/Video by businesshackswithtaimur (1).mp4"
-                                    type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
+     <!-- Video Modal Start -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video id="modalVideo" class="embed-responsive-item" controls>
+                        <source src="/img/Video by businesshackswithtaimur (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
-        <!-- Video Modal End -->
+    </div>
+</div>
+<!-- Video Modal End -->
+
+<!-- Thumbnail Image -->
+<img id="videoThumbnail" alt="Video Thumbnail" style="display: none;">
+
+<!-- Hidden Canvas -->
+<canvas id="videoCanvas" style="display: none;"></canvas>
+
+
+
 
         <!-- Header Start -->
         <div
@@ -187,8 +191,8 @@
             </div>
         </div>
 
-        <!-- Blog Start -->
-        <div class="container-fluid pt-5" id="blog">
+         <!-- Blog Start -->
+         <div class="container-fluid pt-5" id="blog">
             <div class="container">
                 <div
                     class="position-relative d-flex align-items-center justify-content-center">
@@ -200,51 +204,37 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 mb-5">
-                        <div class="position-relative mb-4">
-                            <img class="img-fluid rounded w-100"
-                                src="img/marketing.jpeg" alt>
+                        <div class="image-container mb-4">
+                            <img src="img/marketing.jpeg" alt="Image 1">
                             <div class="blog-date">
                                 <h4 class="font-weight-bold mb-n1">01</h4>
-                                <small
-                                    class="text-white text-uppercase">Jan</small>
+                                <small class="text-white text-uppercase">Jan</small>
                             </div>
                         </div>
-
-                        <a class="btn btn-sm btn-outline-primary py-2" href>Read
-                            More</a>
+                        <a class="btn btn-sm btn-outline-primary py-2" href="#">Read More</a>
                     </div>
                     <div class="col-lg-4 mb-5">
-                        <div class="position-relative mb-4">
-                            <img class="img-fluid rounded w-100"
-                                src="img/img.jpeg" alt>
+                        <div class="image-container mb-4">
+                            <img src="img/img.jpeg" alt="Image 2">
                             <div class="blog-date">
                                 <h4 class="font-weight-bold mb-n1">01</h4>
-                                <small
-                                    class="text-white text-uppercase">Jan</small>
+                                <small class="text-white text-uppercase">Jan</small>
                             </div>
                         </div>
-
-                        <a class="btn btn-sm btn-outline-primary py-2" href>Read
-                            More</a>
+                        <a class="btn btn-sm btn-outline-primary py-2" href="#">Read More</a>
                     </div>
                     <div class="col-lg-4 mb-5">
-                        <div class="position-relative mb-4"
-                            style="width: 300px;">
-                            <img class="img-fluid rounded w-100"
-                                src="img/img1.jpeg" alt>
+                        <div class="image-container mb-4">
+                            <img src="img/img1.jpeg" alt="Image 2">
                             <div class="blog-date">
                                 <h4 class="font-weight-bold mb-n1">01</h4>
-                                <small
-                                    class="text-white text-uppercase">Jan</small>
+                                <small class="text-white text-uppercase">Jan</small>
                             </div>
                         </div>
-
-                        <a class="btn btn-sm btn-outline-primary py-2" href>Read
-                            More</a>
+                        <a class="btn btn-sm btn-outline-primary py-2" href="#">Read More</a>
                     </div>
                 </div>
             </div>
-        </div>
         <!-- Blog End -->
 
         <!-- Contact Start -->
