@@ -1,94 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Taimur Shahid Personal Website Practice</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Taimur Shahid Personal Website Practice</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free HTML Templates" name="keywords">
-        <meta content="Free HTML Templates" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-            rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-        <!-- Font Awesome -->
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-            rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css"
-            rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-
-        <script src="path/to/jquery.min.js"></script>
-        <script src="path/to/bootstrap.bundle.min.js"></script>
-    </head>
-
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Navbar Start -->
-        <nav
-            class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="text-primary m-0">
-                    <img class="me-3" src="/img/Hatch logo pdf_page-0001.jpg"
-                        alt="Icon" width="170" height="70">
-                </h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse"
-                data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0">
-                    <a href="index.html" class="nav-item nav-link ">Home</a>
-                    <a href="about.html" class="nav-item nav-link ">About</a>
-                    <a href="experience.html"
-                        class="nav-item nav-link">Experience</a>
-                    <a href="skills.html" class="nav-item nav-link">Skills</a>
-                    <a href="achievement.html" class="nav-item nav-link">Achievement</a>
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                </div>
-                <a href class="btn btn-outline-primary d-none d-lg-block">Hire
-                    Me</a>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="text-primary m-0"><img class="me-3" src="/img/Hatch logo pdf_page-0001.jpg" alt="Icon" width="170" height="70"></h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="experience.html" class="nav-item nav-link">Experience</a>
+                <a href="skills.html" class="nav-item nav-link">Skills</a>
+                <a href="achievement.html" class="nav-item nav-link">Achievement</a>
+                <a href="privacy.html" class="nav-item nav-link ">Privacy</a>
+                <a href="FAQs.html" class="nav-item nav-link ">FAQs</a>
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
             </div>
-        </nav>
-        <!-- Navbar End -->
+            <a href="#" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
-        <!-- Video Modal Start -->
-        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal"
-                            aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- 16:9 aspect ratio -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <video id="modalVideo" class="embed-responsive-item"
-                                controls >
-                                <source
-                                    src="/img/Video by businesshackswithtaimur (1).mp4"
-                                    type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
+      <!-- Video Modal Start -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video id="modalVideo" class="embed-responsive-item" controls>
+                        <source src="/img/Video by businesshackswithtaimur (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
-        <!-- Video Modal End -->
+    </div>
+</div>
+<!-- Video Modal End -->
+
+<!-- Thumbnail Image -->
+<img id="videoThumbnail" alt="Video Thumbnail" style="display: none;">
+
+<!-- Hidden Canvas -->
+<canvas id="videoCanvas" style="display: none;"></canvas>
+
+
+
 
         <!-- Header Start -->
         <div
