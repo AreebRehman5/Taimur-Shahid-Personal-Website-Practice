@@ -58,6 +58,31 @@
         })
     });
 
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('modalVideo');
+        var canvas = document.getElementById('videoCanvas');
+        var ctx = canvas.getContext('2d');
+        var thumbnail = document.getElementById('videoThumbnail');
+
+        video.addEventListener('loadeddata', function() {
+            // Set canvas dimensions to match video
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+
+            // Seek to 1 second and capture frame
+            video.currentTime = 1;
+            video.addEventListener('seeked', function() {
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                // Set the image source to the canvas data
+                thumbnail.src = canvas.toDataURL('image/jpeg');
+                thumbnail.style.display = 'none';
+            }, { once: true });
+        });
+
+        // Trigger video load
+        video.load();
+    });
+
 
     // Scroll to Bottom
     $(window).scroll(function () {
